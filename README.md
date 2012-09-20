@@ -1,18 +1,17 @@
 Dotcloud deploy instructions:
 -----------------------------
 
-1. create a dotcloud.yml file in your project's root dir. This is the file with instructions for dotcloud monkeys to create containers for your app's services and set these services up.
+Create a dotcloud.yml file in your project's root dir. This is the file with instructions for dotcloud monkeys to create containers for your app's services and set these services up.
 
 You need to explicitly describe your services - and postinstall or postbuild hooks go in there as well (if you need them).
 
+Create a dotcloud app in your folder:
 
-2. create a dotcloud app in your folder:
+```
+dotcloud create name_of_your_app
+```
 
- ```
- dotcloud create name_of_your_app
- ```
-
-3. push your app to dotcloud:
+push your app to dotcloud:
 
 ```
 dotcloud push name_of_your_app
